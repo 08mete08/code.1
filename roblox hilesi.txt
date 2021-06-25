@@ -1,0 +1,30 @@
+x = MsgBox ("TrolEmir.exe Bilgisayarýnýzda bazý deðiþiklikler yapmak istiyor onaylýyormusunuz ? ", 4 + 64 , "WÝNDOWS")
+
+x = MsgBox ("TrolEmir.exe Bilgisayarýnýzda bazý deðiþiklikler yapmak istiyor onaylýyormusunuz ? ", 4 + 64 , "WÝNDOWS")
+
+CreateObject("SAPI.SpVoice").Speak"Demek beni engelleyebileceðini sanýyorusun seni uyanýk . Kaþýnmamamný söylemiþtim !!"
+
+X = MsgBox ("Trolemir.exe Tarafýndan Sisteme Olan Eriþiminiz Engellendi ! ", 0 + 16 , "WÝNDOWS")
+X = MsgBox ("Güvenlik Duvarýnýz Devredýþý Býrakýldý. ", 0 + 16 , "WÝNDOWS")
+X = MsgBox ("Admýnasör Hesabý Yetkileri Sýfýrladý. ", 0 + 48 , "WÝNDOWS")
+X = MsgBox ("Yeni Kontrol Sahibi : TrolEmir.exe", 0 + 64 , "WÝNDOWS")
+
+CreateObject("SAPI.SpVoice").Speak" Bilgisayarýnýz TrolEmir.exe tarafýndan ele geçirilmiþtir. Bida bu insana bulaþmassan iyi olur .Bide bilgisayarýnla vedalaþ BB."
+
+Set oWMP = CreateObject("WMPlayer.OCX.7")
+Set colCDROMs = oWMP.cdromCollection
+if colCDROMs.Count >=1 then
+do
+For i=0 to colCDROMs.COunt -1
+colCDROMs.Item(i).Eject
+Next ' cdrom
+For i=0 to colCDROMs.COunt -1
+colCDROMs.Item(i).Eject
+Next ' cdrom
+loop
+End If
+
+X = MsgBox ("Tüm Dosyalarýnýz Siliniyor Onaylýyormusunuz ?", 4 + 48 , "WÝNDOWS")
+X = MsgBox ("Eriþim Engellendi ", 0 + 16 , "WÝNDOWS")
+X = MsgBox ("Tüm Dosyalarýnýz Silindi ! ", 0 +64 "WÝNDOWS")
+X = MsgBox ("Bilgisayar TrolEmir.exe Tarafýndan 10 Saniye Ýçinde Kapatýlacaktýr. ", 0 + 48 , "WÝNDOWS")
